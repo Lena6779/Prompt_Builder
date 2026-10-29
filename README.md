@@ -2,12 +2,6 @@
 
 A Python script that demonstrates the **prompt assembly** step of a RAG (Retrieval-Augmented Generation) pipeline. It takes a user question and a list of retrieved document chunks (simulated), builds a complete prompt for an LLM, and estimates its token count.
 
-## RAG Pipeline Architecture
-
-![RAG pipeline diagram](rag_pipeline_diagram.jpeg)
-
-The diagram shows all 5 stages of the pipeline: user question input, query embedding, vector database retrieval, prompt assembly, and LLM generation. `prompt_builder.py` implements **Stage 4: Prompt Assembly**.
-
 ## What the Script Does
 
 - Uses a system prompt that tells the model to answer **only** from the provided context
